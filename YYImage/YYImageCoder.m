@@ -35,7 +35,7 @@
 #import "decode.h"
 #import "encode.h"
 #import "demux.h"
-#import "mux.h"
+#import "mux.h"
 #else
 #define YYIMAGE_WEBP_ENABLED 0
 #endif
