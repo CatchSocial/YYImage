@@ -21,8 +21,6 @@
 #import <pthread.h>
 #import <zlib.h>
 
-
-
 #ifndef YYIMAGE_WEBP_ENABLED
 #if __has_include(<webp/decode.h>) && __has_include(<webp/encode.h>) && \
     __has_include(<webpdemux/demux.h>)  && __has_include(<webpmux/mux.h>)
@@ -31,13 +29,13 @@
 #import <webp/encode.h>
 #import <webpdemux/demux.h>
 #import <webpmux/mux.h>
-#elif __has_include("webp/decode.h") && __has_include("webp/encode.h") && \
-      __has_include("webpdemux/demux.h")  && __has_include("webpmux/mux.h")
+#elif __has_include("decode.h") && __has_include("encode.h") && \
+      __has_include("demux.h")  && __has_include("mux.h")
 #define YYIMAGE_WEBP_ENABLED 1
-#import "webp/decode.h"
-#import "webp/encode.h"
-#import "webpdemux/demux.h"
-#import "webpmux/mux.h"
+#import "decode.h"
+#import "encode.h"
+#import "demux.h"
+#import "mux.h"
 #else
 #define YYIMAGE_WEBP_ENABLED 0
 #endif
